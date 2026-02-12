@@ -24,7 +24,7 @@ export default function EmotionalGuarantee() {
                 <h2 className="section-title">Você não vai se sentir <span style={{ color: 'var(--text-muted)', textDecoration: 'line-through' }}>perdido</span></h2>
 
                 <div className="glass-card" style={{ maxWidth: '800px', margin: '0 auto', padding: '3rem' }}>
-                    <p style={{ fontSize: '1.5rem', fontWeight: 700, color: 'white' }}>
+                    <p style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)' }}>
                         Eu garanto que você não vai se sentir perdido, inseguro ou com medo.
                     </p>
                 </div>

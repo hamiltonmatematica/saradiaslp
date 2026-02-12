@@ -10,7 +10,7 @@ export default function TargetAudience() {
     ];
 
     return (
-        <section className="section" style={{ background: 'linear-gradient(to bottom, var(--bg-dark), #0a101f)' }}>
+        <section className="section" style={{ background: 'var(--bg-dark)' }}>
             <div className="container">
                 <h2 className="section-title">Esse curso é para <span className="text-gradient">você que</span></h2>
 
@@ -27,7 +27,7 @@ export default function TargetAudience() {
                             onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateX(0) scale(1)'; }}
                         >
                             <CheckCircle2 color="var(--accent)" style={{ minWidth: '24px', marginRight: '1.5rem' }} />
-                            <span style={{ fontSize: '1.2rem', color: 'white' }}>{item}</span>
+                            <span style={{ fontSize: '1.2rem', color: 'var(--text-main)' }}>{item}</span>
                         </div>
                     ))}
                 </div>

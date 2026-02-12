@@ -39,7 +39,7 @@ export default function Methodology() {
                                 {/* Clone icon with larger size */}
                                 <div style={{ transform: 'scale(2)' }}>{item.icon}</div>
                             </div>
-                            <p style={{ fontWeight: 600, fontSize: '1.1rem', color: 'white' }}>{item.text}</p>
+                            <p style={{ fontWeight: 600, fontSize: '1.1rem', color: 'var(--text-main)' }}>{item.text}</p>
                         </div>
                     ))}
                 </div>

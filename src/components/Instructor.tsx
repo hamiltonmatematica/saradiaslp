@@ -1,45 +1,68 @@
-import { User } from 'lucide-react';
+
 
 export default function Instructor() {
     return (
         <section className="section">
-            <div className="container">
-                <h2 className="section-title">Quem vai te <span className="text-gradient">ensinar</span></h2>
-
+            <div className="container" style={{ maxWidth: '1000px' }}>
                 <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    maxWidth: '900px',
-                    margin: '0 auto'
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    gap: '4rem',
+                    alignItems: 'center'
                 }}>
-                    <div style={{
-                        width: '240px',
-                        height: '240px',
-                        borderRadius: '50%',
-                        marginBottom: '2rem',
-                        overflow: 'hidden',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '4px solid var(--primary)',
-                        boxShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 10px var(--accent)'
-                    }}>
-                        <div style={{ width: '100%', height: '100%', backgroundColor: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <User size={120} color="#666" />
+                    {/* Image Column */}
+                    <div className="animate-up" style={{ display: 'flex', justifyContent: 'center' }}>
+                        <div style={{
+                            position: 'relative',
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            boxShadow: 'var(--gold-shadow)',
+                            border: '4px solid var(--primary-light)', // Frame effect
+                        }}>
+                            <img
+                                src="/z_SaraEscolhidas-0002.jpg"
+                                alt="Sara Dias - Professora de Inglês"
+                                style={{
+                                    width: '100%',
+                                    maxWidth: '400px',
+                                    height: 'auto',
+                                    display: 'block',
+                                    objectFit: 'cover'
+                                }}
+                            />
+                            {/* Overlay/Gradient for better text readability if we put text over it in future */}
+                            <div style={{
+                                position: 'absolute',
+                                inset: 0,
+                                background: 'linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 40%)',
+                                pointerEvents: 'none'
+                            }} />
                         </div>
                     </div>
 
-                    <h3 className="text-gradient-gold" style={{ fontSize: '3rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>Sara Dias</h3>
-                    <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2rem', letterSpacing: '3px', textTransform: 'uppercase' }}>
-                        Professora de inglês focada em comunicação oral
-                    </p>
+                    {/* Content Column */}
+                    <div className="animate-up delay-200" style={{ textAlign: 'left' }}>
+                        <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', color: 'var(--text-main)' }}>
+                            Quem vai te <span className="text-gradient">ensinar</span>
+                        </h2>
 
-                    <div className="glass-card" style={{ padding: '2rem', borderLeft: '4px solid var(--accent)' }}>
-                        <p style={{ fontSize: '1.4rem', lineHeight: 1.6, fontStyle: 'italic', color: 'var(--text-main)' }}>
-                            "Meu objetivo é te mostrar que aprender inglês pode ser simples, possível e acessível, mesmo começando do zero."
-                        </p>
+                        <h3 className="text-gradient-gold" style={{ fontSize: '2.5rem', marginBottom: '1rem', textTransform: 'uppercase', lineHeight: 1.1 }}>
+                            Sara Dias
+                        </h3>
+
+                        <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--accent)', marginBottom: '2rem' }} />
+
+                        <div style={{ color: 'var(--text-main)', fontSize: '1.15rem' }}>
+                            <p style={{ marginBottom: '1.5rem', lineHeight: 1.8 }}>
+                                Comecei a dar aulas de inglês aos 17 anos — e já são <strong>18 anos ensinando</strong>. Estudei na Universidade Estadual de Montes Claros e passei 12 anos lecionando em escolas de idiomas, até decidir trilhar meu próprio caminho.
+                            </p>
+                            <p style={{ marginBottom: '1.5rem', lineHeight: 1.8 }}>
+                                Há 6 anos, ensino inglês online e produzo conteúdo para ajudar pessoas a destravarem de vez o idioma.
+                            </p>
+                            <p style={{ lineHeight: 1.8 }}>
+                                Agora, reuni toda essa experiência em um <strong style={{ color: 'var(--primary)' }}>curso básico de inglês</strong>, pensado para guiar você passo a passo de forma simples, prática e possível.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

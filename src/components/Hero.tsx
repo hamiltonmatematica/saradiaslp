@@ -17,7 +17,7 @@ export default function Hero() {
             borderRadius: '50px',
             backgroundColor: 'rgba(212, 175, 55, 0.1)'
           }}>
-            Aula gratuita
+            Curso Básico de Inglês
           </span>
         </div>
 
