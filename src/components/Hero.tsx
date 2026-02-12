@@ -1,5 +1,4 @@
 import '../index.css';
-import CountdownTimer from './CountdownTimer';
 
 export default function Hero() {
   return (
@@ -71,8 +70,6 @@ export default function Hero() {
 
         {/* Main CTA */}
         <div className="animate-up delay-300" style={{ marginTop: '3rem' }}>
-          <CountdownTimer />
-
           <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{
             fontSize: '1.2rem',
             padding: '1rem 3rem',

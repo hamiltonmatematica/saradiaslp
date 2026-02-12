@@ -1,5 +1,3 @@
-import CountdownTimer from './CountdownTimer';
-
 export default function FinalCTA() {
     return (
         <section className="section" style={{ position: 'relative', padding: '8rem 0' }}>
@@ -19,8 +17,6 @@ export default function FinalCTA() {
                 <p className="mb-8" style={{ fontSize: '1.5rem', maxWidth: '800px', margin: '0 auto 4rem', color: 'var(--text-secondary)' }}>
                     Se essa aula gratuita já te ajudou, imaginem o que o curso completo fará por você. Método, constância e segurança para falar de verdade.
                 </p>
-
-                <CountdownTimer />
 
                 <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '1.5rem 4rem', textTransform: 'uppercase' }}>
                     QUERO ENTRAR NO CURSO

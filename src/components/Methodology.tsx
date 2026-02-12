@@ -1,5 +1,4 @@
 import { Mic, Layers, TrendingUp } from 'lucide-react';
-import CountdownTimer from './CountdownTimer';
 
 export default function Methodology() {
     const items = [
@@ -47,8 +46,6 @@ export default function Methodology() {
 
                 {/* CTA Button */}
                 <div style={{ textAlign: 'center' }}>
-                    <CountdownTimer />
-
                     <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{
                         fontSize: '1.2rem',
                         padding: '1rem 3rem',
