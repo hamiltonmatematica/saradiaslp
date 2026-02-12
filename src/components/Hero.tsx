@@ -43,25 +43,16 @@ export default function Hero() {
           position: 'relative',
           overflow: 'hidden'
         }}>
-          {/* Subtle background placeholder for video */}
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle, #1a2c4e 0%, #000 100%)', zIndex: -1 }} />
-
-          <div style={{ color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'pointer' }}>
-            <div style={{
-              width: '80px',
-              height: '80px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--highlight)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 0 30px var(--highlight-glow)',
-              marginBottom: '1rem'
-            }}>
-              <Play size={40} color="black" fill="black" style={{ marginLeft: '4px' }} />
-            </div>
-            <p style={{ fontWeight: 600, letterSpacing: '1px' }}>ASSISTIR AGORA</p>
-          </div>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/m9S9BIk9H2w?si=Sc74w8E7s8X9k9l9"
+            title="Aula 1 - Inglês sem Medo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            style={{ border: 'none' }}
+          ></iframe>
         </div>
 
         <div className="delay-300" style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--text-muted)' }}>
