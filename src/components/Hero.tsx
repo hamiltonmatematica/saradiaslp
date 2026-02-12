@@ -1,12 +1,11 @@
-import { Play } from 'lucide-react';
 import '../index.css';
 
 export default function Hero() {
   return (
     <section className="section" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div className="container text-center animate-up">
+      <div className="container text-center">
         {/* Badge */}
-        <div className="mb-8 delay-100">
+        <div className="mb-8 animate-up delay-100">
           <span style={{
             color: 'var(--accent)',
             fontWeight: 700,
@@ -22,40 +21,45 @@ export default function Hero() {
         </div>
 
         {/* Title */}
-        <h1 className="delay-200" style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>
+        <h1 className="animate-up delay-200" style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>
           INGLÊS <span className="text-gradient">SEM MEDO</span>
         </h1>
 
-        <p className="delay-300" style={{ fontSize: '1.5rem', marginBottom: '3rem', color: 'var(--text-secondary)' }}>
+        <p className="animate-up delay-300" style={{ fontSize: '1.5rem', marginBottom: '3rem', color: 'var(--text-secondary)' }}>
           Assista à aula gratuita e comece a falar inglês desde a primeira aula
         </p>
 
         {/* Video Container - Glass & Glow */}
-        <div className="glass-card delay-300" style={{
-          maxWidth: '900px',
-          margin: '0 auto 3rem',
-          aspectRatio: '16/9',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: 'var(--neon-shadow)',
-          border: '1px solid var(--highlight-glow)',
-          position: 'relative',
-          overflow: 'hidden'
-        }}>
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/m9S9BIk9H2w?si=Sc74w8E7s8X9k9l9"
-            title="Aula 1 - Inglês sem Medo"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            style={{ border: 'none' }}
-          ></iframe>
+        {/* Changed to padding-bottom hack for wider browser compatibility */}
+        <div className="animate-up delay-300" style={{ width: '100%', maxWidth: '900px', margin: '0 auto 3rem' }}>
+          <div className="glass-card" style={{
+            position: 'relative',
+            paddingBottom: '56.25%', /* 16:9 Aspect Ratio */
+            height: 0,
+            width: '100%',
+            boxShadow: 'var(--neon-shadow)',
+            border: '1px solid var(--highlight-glow)',
+            overflow: 'hidden'
+          }}>
+            <iframe
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                border: 'none'
+              }}
+              src="https://www.youtube.com/embed/m9S9BIk9H2w?si=Sc74w8E7s8X9k9l9"
+              title="Aula 1 - Inglês sem Medo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
-        <div className="delay-300" style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--text-muted)' }}>
+        <div className="animate-up delay-300" style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--text-muted)' }}>
           <p className="mb-4">
             Essa aula é parte do método <span style={{ color: 'var(--text-main)', fontWeight: 600 }}>Inglês sem medo</span>.
           </p>
