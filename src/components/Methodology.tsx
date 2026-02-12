@@ -46,7 +46,7 @@ export default function Methodology() {
 
                 {/* CTA Button */}
                 <div style={{ textAlign: 'center' }}>
-                    <a href="#" className="btn btn-primary" style={{
+                    <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{
                         fontSize: '1.2rem',
                         padding: '1rem 3rem',
                         textTransform: 'uppercase',
@@ -55,6 +55,11 @@ export default function Methodology() {
                     }}>
                         QUERO ENTRAR NO CURSO
                     </a>
+
+                    <div style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
+                        <p style={{ marginBottom: '0.5rem', fontWeight: 600 }}>7 x de R$ 28,15</p>
+                        <p style={{ color: 'var(--text-muted)' }}>Ou R$ 197,00 à vista</p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -18,9 +18,14 @@ export default function FinalCTA() {
                     Se essa aula gratuita já te ajudou, imaginem o que o curso completo fará por você. Método, constância e segurança para falar de verdade.
                 </p>
 
-                <a href="#" className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '1.5rem 4rem', textTransform: 'uppercase' }}>
+                <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '1.5rem 4rem', textTransform: 'uppercase' }}>
                     QUERO ENTRAR NO CURSO
                 </a>
+
+                <p style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
+                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>7 x de R$ 28,15</span>
+                    <span style={{ color: 'var(--text-muted)' }}>Ou R$ 197,00 à vista</span>
+                </p>
 
                 <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: 'var(--text-muted)', letterSpacing: '1px' }}>
                     GARANTIA DE 7 DIAS • ACESSO IMEDIATO • PAGAMENTO SEGURO
