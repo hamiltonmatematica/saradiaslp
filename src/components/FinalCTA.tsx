@@ -1,3 +1,5 @@
+import CountdownTimer from './CountdownTimer';
+
 export default function FinalCTA() {
     return (
         <section className="section" style={{ position: 'relative', padding: '8rem 0' }}>
@@ -18,14 +20,38 @@ export default function FinalCTA() {
                     Se essa aula gratuita já te ajudou, imaginem o que o curso completo fará por você. Método, constância e segurança para falar de verdade.
                 </p>
 
+                <CountdownTimer />
+
                 <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{ fontSize: '1.3rem', padding: '1.5rem 4rem', textTransform: 'uppercase' }}>
                     QUERO ENTRAR NO CURSO
                 </a>
 
-                <p style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-                    <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>7 x de R$ 28,15</span>
-                    <span style={{ color: 'var(--text-muted)' }}>Ou R$ 197,00 à vista</span>
-                </p>
+                <div style={{
+                    marginTop: '1.5rem',
+                    padding: '1.25rem',
+                    background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05))',
+                    borderRadius: '12px',
+                    border: '1px solid rgba(212, 175, 55, 0.3)',
+                    maxWidth: '400px',
+                    margin: '1.5rem auto'
+                }}>
+                    <p style={{
+                        marginBottom: '0.75rem',
+                        fontSize: '1.5rem',
+                        fontWeight: 700,
+                        color: 'var(--accent)',
+                        textShadow: '0 0 20px rgba(212, 175, 55, 0.3)'
+                    }}>
+                        💳 7x de R$ 28,15
+                    </p>
+                    <p style={{
+                        fontSize: '1.25rem',
+                        color: 'var(--text-secondary)',
+                        fontWeight: 600
+                    }}>
+                        Ou R$ 197,00 à vista
+                    </p>
+                </div>
 
                 <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: 'var(--text-muted)', letterSpacing: '1px' }}>
                     GARANTIA DE 7 DIAS • ACESSO IMEDIATO • PAGAMENTO SEGURO

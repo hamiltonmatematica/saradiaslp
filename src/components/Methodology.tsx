@@ -1,4 +1,5 @@
 import { Mic, Layers, TrendingUp } from 'lucide-react';
+import CountdownTimer from './CountdownTimer';
 
 export default function Methodology() {
     const items = [
@@ -46,6 +47,8 @@ export default function Methodology() {
 
                 {/* CTA Button */}
                 <div style={{ textAlign: 'center' }}>
+                    <CountdownTimer />
+
                     <a href="https://pay.hotmart.com/C104256931L?bid=1770918139578" className="btn btn-primary" style={{
                         fontSize: '1.2rem',
                         padding: '1rem 3rem',
@@ -56,9 +59,31 @@ export default function Methodology() {
                         QUERO ENTRAR NO CURSO
                     </a>
 
-                    <div style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-                        <p style={{ marginBottom: '0.5rem', fontWeight: 600 }}>7 x de R$ 28,15</p>
-                        <p style={{ color: 'var(--text-muted)' }}>Ou R$ 197,00 à vista</p>
+                    <div style={{
+                        marginTop: '1.5rem',
+                        padding: '1.25rem',
+                        background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05))',
+                        borderRadius: '12px',
+                        border: '1px solid rgba(212, 175, 55, 0.3)',
+                        maxWidth: '400px',
+                        margin: '1.5rem auto 0'
+                    }}>
+                        <p style={{
+                            marginBottom: '0.75rem',
+                            fontSize: '1.5rem',
+                            fontWeight: 700,
+                            color: 'var(--accent)',
+                            textShadow: '0 0 20px rgba(212, 175, 55, 0.3)'
+                        }}>
+                            💳 7x de R$ 28,15
+                        </p>
+                        <p style={{
+                            fontSize: '1.25rem',
+                            color: 'var(--text-secondary)',
+                            fontWeight: 600
+                        }}>
+                            Ou R$ 197,00 à vista
+                        </p>
                     </div>
                 </div>
             </div>
