@@ -29,19 +29,6 @@ export default function Hero() {
           Assista à aula gratuita e comece a falar inglês desde a primeira aula
         </p>
 
-        {/* Main CTA */}
-        <div className="animate-up delay-300" style={{ marginBottom: '3rem' }}>
-          <a href="#" className="btn btn-primary" style={{
-            fontSize: '1.2rem',
-            padding: '1rem 3rem',
-            textTransform: 'uppercase',
-            fontWeight: 700,
-            letterSpacing: '1px'
-          }}>
-            QUERO ENTRAR NO CURSO
-          </a>
-        </div>
-
         {/* Video Container - Glass & Glow */}
         {/* Changed to padding-bottom hack for wider browser compatibility */}
         <div className="animate-up delay-300" style={{ width: '100%', maxWidth: '900px', margin: '0 auto 3rem' }}>
@@ -79,6 +66,19 @@ export default function Hero() {
           <p>
             Aqui você entende em português primeiro e depois aprende a montar e falar frases em inglês.
           </p>
+        </div>
+
+        {/* Main CTA */}
+        <div className="animate-up delay-300" style={{ marginTop: '3rem' }}>
+          <a href="#" className="btn btn-primary" style={{
+            fontSize: '1.2rem',
+            padding: '1rem 3rem',
+            textTransform: 'uppercase',
+            fontWeight: 700,
+            letterSpacing: '1px'
+          }}>
+            QUERO ENTRAR NO CURSO
+          </a>
         </div>
       </div>
     </section>

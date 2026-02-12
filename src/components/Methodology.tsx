@@ -43,6 +43,19 @@ export default function Methodology() {
                         </div>
                     ))}
                 </div>
+
+                {/* CTA Button */}
+                <div style={{ textAlign: 'center' }}>
+                    <a href="#" className="btn btn-primary" style={{
+                        fontSize: '1.2rem',
+                        padding: '1rem 3rem',
+                        textTransform: 'uppercase',
+                        fontWeight: 700,
+                        letterSpacing: '1px'
+                    }}>
+                        QUERO ENTRAR NO CURSO
+                    </a>
+                </div>
             </div>
         </section>
     );
